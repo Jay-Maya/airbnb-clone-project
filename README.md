@@ -191,3 +191,22 @@ For payment processing, secure third-party services (like Stripe or PayPal) will
 ---
 
 By implementing these security practices, the Airbnb Clone Project ensures a trustworthy and safe experience for both hosts and guests.
+## CI/CD Pipeline
+
+Continuous Integration (CI) and Continuous Deployment (CD) pipelines are automated processes that help streamline development and deployment. CI ensures that code changes are automatically tested and integrated into the main codebase, while CD automates the release of validated code to production.
+
+Implementing a CI/CD pipeline helps:
+- Detect bugs early through automated testing
+- Ensure consistent deployment environments
+- Speed up development and release cycles
+- Improve team collaboration and code quality
+
+### 🔧 Tools That Can Be Used:
+- **GitHub Actions**: Automates tasks like testing, linting, and deployment directly from the GitHub repository.
+- **Docker**: Containerizes the application to ensure consistency across development, testing, and production environments.
+- **Heroku / Vercel / Netlify**: For auto-deployment of the app once changes are pushed to the repository.
+- **Travis CI or Jenkins** (optional): Additional CI/CD tools for custom workflows and complex deployments.
+
+---
+
+By setting up a CI/CD pipeline, the Airbnb Clone Project will maintain high code quality and deliver updates efficiently and reliably.
