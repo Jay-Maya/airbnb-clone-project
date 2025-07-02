@@ -27,3 +27,34 @@ Tests the application to identify bugs, performance issues, or UX flaws. Ensures
 ---
 
 Each role plays a vital part in the successful completion of the Airbnb Clone Project.
+## Technology Stack
+
+The Airbnb Clone Project uses the following technologies to build a modern, scalable web application:
+
+### 🔹 Django
+A high-level Python web framework that encourages rapid development. In this project, Django is used to build the backend server and RESTful APIs, handle authentication, and manage server-side logic.
+
+### 🔹 PostgreSQL
+A powerful open-source relational database system. It is used to store user data, property listings, bookings, and reviews with strong data integrity and query capabilities.
+
+### 🔹 GraphQL
+A query language for APIs. It allows the frontend to request only the specific data it needs from the backend, making data fetching more efficient and flexible.
+
+### 🔹 React
+A JavaScript library for building user interfaces. React is used to create dynamic and responsive frontend components for users to interact with the platform.
+
+### 🔹 HTML & CSS
+Standard technologies used for structuring (HTML) and styling (CSS) the frontend of the application.
+
+### 🔹 JavaScript
+The programming language that brings interactivity to the frontend. It is used alongside React for client-side scripting.
+
+### 🔹 Git & GitHub
+Version control tools used to manage and collaborate on the project codebase. Git tracks changes, while GitHub hosts the repository and supports collaboration.
+
+### 🔹 Docker (Optional)
+Used for containerization of the application to ensure consistent environments across development, testing, and deployment.
+
+---
+
+These technologies work together to deliver a full-stack web application with a smooth user experience and robust backend support.
