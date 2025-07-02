@@ -58,3 +58,87 @@ Used for containerization of the application to ensure consistent environments a
 ---
 
 These technologies work together to deliver a full-stack web application with a smooth user experience and robust backend support.
+## Database Design
+
+Below are the key entities in the Airbnb Clone Project, their important fields, and how they relate to each other.
+
+### 🔹 Users
+Represents all users of the platform (guests and hosts).
+
+**Fields:**
+- `id` (Primary Key)
+- `username`
+- `email`
+- `password_hash`
+- `is_host` (boolean to indicate if the user is a host)
+
+**Relationships:**
+- A user can **own multiple properties**
+- A user can **make multiple bookings**
+- A user can **leave multiple reviews**
+
+---
+
+### 🔹 Properties
+Represents the accommodations listed on the platform.
+
+**Fields:**
+- `id` (Primary Key)
+- `title`
+- `description`
+- `location`
+- `price_per_night`
+- `host_id` (Foreign Key to Users)
+
+**Relationships:**
+- A property **belongs to one host (user)**
+- A property can **have multiple bookings**
+- A property can **receive multiple reviews**
+
+---
+
+### 🔹 Bookings
+Represents reservation details when a guest books a property.
+
+**Fields:**
+- `id` (Primary Key)
+- `user_id` (Foreign Key to Users)
+- `property_id` (Foreign Key to Properties)
+- `start_date`
+- `end_date`
+- `status` (e.g., confirmed, canceled)
+
+**Relationships:**
+- A booking **belongs to a user**
+- A booking **belongs to a property**
+
+---
+
+### 🔹 Reviews
+Represents feedback left by guests after their stay.
+
+**Fields:**
+- `id` (Primary Key)
+- `user_id` (Foreign Key to Users)
+- `property_id` (Foreign Key to Properties)
+- `rating`
+- `comment`
+
+**Relationships:**
+- A review **belongs to a user**
+- A review **belongs to a property**
+
+---
+
+### 🔹 Payments
+Represents transaction records for bookings.
+
+**Fields:**
+- `id` (Primary Key)
+- `booking_id` (Foreign Key to Bookings)
+- `amount`
+- `payment_method`
+- `payment_status`
+
+**Relationships:**
+- A payment **belongs to a booking**
