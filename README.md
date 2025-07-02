@@ -166,3 +166,28 @@ Users can search for properties based on location, price, or availability. Filte
 
 ### 🔹 Admin Dashboard (Optional)
 Admins can manage users, properties, and bookings. This feature supports overall system monitoring and platform moderation.
+## API Security
+
+Security is a critical component of the Airbnb Clone Project to protect user data, transactions, and platform integrity. Below are the key API security measures that will be implemented:
+
+### 🔹 Authentication
+We will use token-based authentication (e.g., JWT) to ensure that only registered users can access protected routes. This prevents unauthorized access and ensures that users are who they claim to be.
+
+### 🔹 Authorization
+Role-based access control (RBAC) will be implemented to distinguish between guests, hosts, and admins. For example, only hosts can add properties, and only guests can book them. This ensures that users only perform actions they are permitted to.
+
+### 🔹 Rate Limiting
+To prevent abuse such as brute-force attacks or denial-of-service (DoS), rate limiting will restrict the number of API requests a user can make in a certain time frame. This keeps the backend performant and secure.
+
+### 🔹 Input Validation & Sanitization
+All incoming data will be validated and sanitized to prevent SQL injection, XSS, and other injection attacks. This ensures the integrity of the database and user safety.
+
+### 🔹 HTTPS Encryption
+All communication between the client and server will be encrypted using HTTPS. This protects sensitive data like passwords and payment information from being intercepted.
+
+### 🔹 Secure Payments
+For payment processing, secure third-party services (like Stripe or PayPal) will be used to handle transactions, ensuring compliance with industry standards such as PCI-DSS.
+
+---
+
+By implementing these security practices, the Airbnb Clone Project ensures a trustworthy and safe experience for both hosts and guests.
